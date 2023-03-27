@@ -103,7 +103,7 @@ select {
     border-radius: 5px;
     display: flex;
     width: 10rem;
-   justify-content: center;
+    justify-content: center;
   }
 
 
@@ -169,12 +169,12 @@ select {
     .input-email, .sign-up-btn { 
         border-radius: 5px;
         margin-top: 5px;
+        width: 100%;
     } 
     }
 
     @media (max-width:768px) {
         .input-email { 
-           width: 100%;
            padding: 5px;
         } 
         }
@@ -195,7 +195,7 @@ select {
     width: 100%;
     position: relative;
     background-position: no-repeat center center/cover;
-    height: 30vh;
+    height: 40vh;
 }
 
 .hero-info {
@@ -368,7 +368,7 @@ select {
   { .hero-sign-up 
     {   width: 100%;
         flex-direction: column;
-       align-items: center;
+        align-items: center;
      } }
 
      @media (max-width:1267px) { .devices-image, img{ 
