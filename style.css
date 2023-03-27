@@ -1,0 +1,403 @@
+
+:root {
+    --bright-blue:#0063e5;
+    --dark-blue: #13151c;
+    --dark-grey: #32343d;
+    --white: #f9f9f9;
+    --text-grey: #757575;
+
+    --ff-primary:'Inconsolata', monospace;
+    --ff-sans-serif: 'Titillium Web', sans-serif;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font:inherit;
+  }
+
+html {
+    background-color: #040713;
+    color: var(--white);
+    font-family: var(--ff-sans-serif);
+}
+
+li {
+    list-style: none;
+}
+
+.center {
+    align-items: center;
+}
+
+.container {
+    padding: 50px 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+}
+
+button {
+    background-color: #0063e5;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+p, h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* hero page */
+
+.logo {
+    font-size: 3rem;
+    font-weight: 900;
+    color:var(--bright-blue);
+}
+
+#language {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--white);
+    padding: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.navbar-right {
+    gap:10px;
+    display: flex;
+    align-items: center;
+   
+}
+
+select {
+    font-family: 'Titillium Web', 'FontAwesome';
+    border-radius: 5px;
+    display: flex;
+    width: 10rem;
+  }
+  .btn-sign-in {
+    border-radius: 5px;
+    display: flex;
+    width: 10rem;
+   justify-content: center;
+  }
+
+
+.header-container {
+    width: 100%;
+    height: 93vh;
+    background: url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
+}
+
+.header-container::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 93vh;
+	z-index: 1;
+	background: rgba(2, 6, 41, 0.6);
+	box-shadow: inset 120px 100px 250px #040713, inset -120px -100px 250px #040713;
+}
+
+.hero-container {
+    width: auto;
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.hero-sign-up {
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.input-email {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    width: 40%;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+::placeholder { 
+    color: var(--white);
+    opacity: 0.7;
+    padding-left: 5px;
+    
+  }
+
+.sign-up-btn {
+    width: 20%;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+@media (max-width:768px) {
+    .input-email, .sign-up-btn { 
+        border-radius: 5px;
+        margin-top: 5px;
+    } 
+    }
+
+    @media (max-width:768px) {
+        .input-email { 
+           width: 100%;
+           padding: 5px;
+        } 
+        }
+
+
+
+
+/* second section */
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-container img {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-position: no-repeat center center/cover;
+    height: 30vh;
+}
+
+.hero-info {
+    /* background: url(./images/starwars.png) no-repeat center center/cover; */
+    width: 100%;
+    display:flex;
+}
+
+.hero-text-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+   
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1.0fr);
+    grid-gap: 5px;
+    overflow: hidden;
+    justify-content: center;
+   
+}
+
+@media (max-width:768px) {
+.movie-container { 
+    width: 300px;
+    grid-template-columns: repeat(3, 0.6fr);
+} 
+}
+
+.movie img {
+    width: 100%;
+    max-height: 100%;
+    height: 200px;
+    border-radius: 3px;
+}
+
+/* devices section */
+
+.devices-image {
+    width: 1000px;
+    margin-bottom: 100px;
+}
+
+.grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+}
+
+@media (min-width:768px) {
+    .grid-item{ width: 29% }
+}
+
+
+.grid-item > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.grid-item h3 {
+    margin-top:20px;
+}
+
+
+
+.p-grid {
+    font-size: 1.0rem;
+    flex-wrap: wrap;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container, .info-container, .hero-container, section {
+      width: 100%;
+    }
+  }
+
+
+  /* FAQ Section */
+
+  .accordion {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  .accordion-container {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    margin: 1rem 0;
+  }
+  .accordion-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .accordion-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+  .accordion-header.active::after {
+    content: "\2212";
+  }
+  .accordion-content-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    background-color: #080b14;
+    padding: 20px 150px 0 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-grid > ul {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.75rem;
+  }
+
+  .footer-grid > ul:hover {
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  .footer-container> p {
+    font-size: 0.75rem;
+  }
+
+  span {
+    margin-bottom: 20px;
+  }
+
+  /* Mobile */
+
+  
+
+
+  @media (max-width:767px) 
+  { .hero-sign-up 
+    {   width: 100%;
+        flex-direction: column;
+       align-items: center;
+     } }
+
+     @media (max-width:1267px) { .devices-image, img{ 
+        width: 100%;
+        display: block;} }
+
+       
+
+
+
+
+       
+
+          @media (max-width:768px) { .navbar select , .btn-sign-in { 
+            max-width: 100%;
+            width: 5rem;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            } }
+
+            @media (max-width:768px) { .logo, h1 { 
+               font-size: 1.5rem;
+                } }
+
+                @media (max-width:768px) { .container { 
+                    padding: 20px;
+                     } }
+
+
+
+
+

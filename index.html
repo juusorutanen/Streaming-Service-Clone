@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Service Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <section>
+        <div class="container header-container">
+            <nav class="navbar">
+                <h1 class="logo">DisneyFlix</h1>
+                <div class="navbar-right">
+                <select name="language" id="language">  
+                        <option value="english" selected>&#xf0ac; English</option>
+                        <option value="suomi">&#xf0ac; Suomi </option>
+                        <option value="svenska" >&#xf0ac; Svenska</option>
+                </select>
+                <button class="btn-sign-in">Sign in</button> 
+                </div>
+            </nav>
+            <div class="hero-container center">
+                <div class="hero-text">
+                    <h1 class="hero-main-text">Unlimited films, TV programmes and more.
+                    </h1>
+                    <h2>Watch anywhere. Cancel at any time.
+                    </h2>
+                    <h3>Ready to watch? Enter your email to create or restart your membership.
+                    </h3>
+                </div>
+                <div class="hero-sign-up">
+                    <input type="email" class="input-email" placeholder="Email address">
+                    <button class="sign-up-btn">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="info-container">
+            <div class="hero-info">
+                <img src="./images/starwars.png">
+                <div class="hero-text-left container">
+                <h1>Enjoy on your TV.</h1>
+                <p>Watch on smart TVs, Playstation, Xbox,
+                Chromecast, Apple TV, Blu-ray players and more.
+                </p>
+                </div>
+            </div>
+            <div class="movie-container" id="movie-grid">
+            </div>
+        </div>  
+    </section>
+
+    <section>
+        <div class="container hero-container">
+                <div class="hero-text">
+                <h1>Watch the way you want.</h1>
+                <p>Enjoy the world's greatest stories - anytime, anywhere.</p>
+                <img class="devices-image" src="https://cnbl-cdn.bamgrid.com/assets/bd14dc9b5200521bcc38af0153c74d001c95e0b6cd71c82c2073017e4eb4a975/original"
+                alt="Watch the Way you Want on a Variety of Devices shown here">
+                </div>
+            
+                <div class="grid-list">
+                    <div class="grid-item center">
+                        <img src="https://cnbl-cdn.bamgrid.com/assets/f496c4734732c167a1643eaa214dbdd3a9124a04a66c4f78f83435fd80a13534/original">
+                        <h3>Endless entertainment</h3>
+                        <p class="p-grid">Explore thousands of hours of TV series, .</p>
+                    </div>
+
+                    <div class="grid-item center">
+                        <img src="https://cnbl-cdn.bamgrid.com/assets/bb4f144134120dc90d8a6023a34450e93d4877ea380bd5e8243f49affa022186/original">
+                        <h3>Endless entertainment</h3>
+                        <p class="p-grid">Explore thousands of hours of TV series, m.</p>
+                    </div>
+
+                    <div class="grid-item center">
+                        <img src="https://cnbl-cdn.bamgrid.com/assets/6876a3855aaa6da0c58b19d95989cec2342f3fe6e079a583456d19539d74bbfb/original">
+                        <h3>Endless entertainment</h3>
+                        <p class="p-grid">Explore thousands of hours of TV series</p>
+                    </div>
+                </div>
+         </div>  
+    </section>
+
+    <section>
+        <div class="container center">
+            <div class="hero-text">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+
+            
+            <div class="accordion">
+
+                <!-- Item 1 -->
+                <div class="accordion-container">
+                    <div class="accordion-header">
+                      What is DisneyFlix?
+                    </div>
+                    <div class="accordion-content-body">
+                      <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                    </div>
+                  </div>
+                
+                   <!-- Item 2 -->
+                
+                <div class="accordion-container">
+                  <div class="accordion-header">
+                    How much does DisneyFlix cost?
+                  </div>
+                  <div class="accordion-content-body">
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+                </div>
+
+                 <!-- Item 3 -->
+
+                <div class="accordion-container">
+                  <div class="accordion-header">
+                    What devices are supported?
+                  </div>
+                  <div class="accordion-content-body">
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-container">
+                  <div class="accordion-header">
+                    Is there any commitment when signing up for DisneyFlix?
+                  </div>
+                  <div class="accordion-content-body">
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-container">
+                  <div class="accordion-header">
+                    What can I watch on DisneyFlix?
+                  </div>
+                  <div class="accordion-content-body">
+                    <div class="accordion-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>  
+    </section>
+
+    <footer>
+        <div class="footer-container container">
+            <div class="logo">DisneyFlix</div>
+            <div class="footer-grid">
+                <ul>
+                    <li>Subscriber Agreement</li>
+                    <li>Privacy Policy</li>
+                    <li>UK & EU Privacy Rights</li>
+                    <li>Cookies Policy</li>
+                    <li>Interest-Based Ads</li>
+                    <li>Supported Devices</li>
+                    <li>Help Centre</li>
+                    <li>Manage Preferences</li>
+                </ul>
+            </div>
+            <p>Content and platform availability may vary by region</p>
+            <span>Ⓒ2023 DisneyFlix and its related entities. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    
+
+   
+</body>
+</html>
