@@ -181,7 +181,6 @@ select {
 
 
 
-
 /* second section */
 
 .info-container {
@@ -278,13 +277,6 @@ select {
 }
 
 
-@media only screen and (max-width: 600px) {
-    .container, .info-container, .hero-container, section {
-      width: 100%;
-    }
-  }
-
-
   /* FAQ Section */
 
   .accordion {
@@ -362,8 +354,6 @@ select {
   /* Mobile */
 
   
-
-
   @media (max-width:767px) 
   { .hero-sign-up 
     {   width: 100%;
@@ -375,13 +365,7 @@ select {
         width: 100%;
         display: block;} }
 
-       
-
-
-
-
-       
-
+    
           @media (max-width:768px) { .navbar select , .btn-sign-in { 
             max-width: 100%;
             width: 5rem;
