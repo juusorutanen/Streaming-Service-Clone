@@ -5,7 +5,7 @@
     --dark-grey: #32343d;
     --white: #f9f9f9;
     --text-grey: #757575;
-    --ff-primary: 'Titillium Web', sans-serif;
+    --font-primary: 'Titillium Web', sans-serif;
 }
 
 * {
@@ -17,7 +17,7 @@
 html {
     background-color: #040713;
     color: var(--white);
-    font-family: var(--ff-primary);
+    font-family: var(--font-primary);
 }
 
 li {
@@ -36,6 +36,10 @@ li {
 
 section {
     width: 100%;
+}
+
+#hero {
+    height: 100vh;
 }
 
 button {
@@ -62,7 +66,6 @@ h2 {
 h3 {
     font-size: 1.25rem;
     font-weight: 400;
-    color: rgb(210, 199, 199);
 }
 
 /* hero page */
@@ -71,12 +74,7 @@ h3 {
     font-size: 3.5rem;
     font-weight: 900;
     color: var(--bright-blue);
-}
-
-#language {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: var(--white);
-    padding: 5px;
+    font-style: italic;
 }
 
 .navbar {
@@ -90,13 +88,6 @@ h3 {
     display: flex;
     align-items: center;
 
-}
-
-select {
-    font-family: 'Titillium Web', 'FontAwesome';
-    border-radius: 5px;
-    display: flex;
-    width: 10rem;
 }
 
 .btn-sign-in {
@@ -115,7 +106,7 @@ button:hover {
 
 .header-container {
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     background: url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
 }
 
@@ -125,7 +116,7 @@ button:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     z-index: 1;
     background: rgba(2, 6, 41, 0.6);
     box-shadow: inset 120px 100px 250px #040713, inset -120px -100px 250px #040713;
@@ -163,7 +154,6 @@ button:hover {
     color: var(--white);
     opacity: 0.7;
     padding-left: 5px;
-
 }
 
 .sign-up-btn {
@@ -172,8 +162,11 @@ button:hover {
     border-bottom-right-radius: 5px;
 }
 
-@media (max-width:768px) {
+.hero-text h3{
+    color: rgb(210, 199, 199);
+}
 
+@media (max-width:768px) {
     .input-email,
     .sign-up-btn {
         border-radius: 5px;
@@ -189,7 +182,6 @@ button:hover {
 }
 
 
-
 /* second section */
 
 .info-container {
@@ -203,7 +195,7 @@ button:hover {
     width: 100%;
     position: relative;
     background-position: no-repeat center center/cover;
-    height: 40vh;
+    height: 50vh;
 }
 
 .hero-info {
@@ -215,6 +207,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 0.4rem;
     position: absolute;
 }
 
@@ -372,19 +365,10 @@ span {
     margin-bottom: 20px;
 }
 
-/* Mobile */
+/* Media Queries */
 
-
-@media (max-width:767px) {
-    .hero-sign-up {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 @media (max-width:1267px) {
-
     .devices-image,
     img {
         width: 100%;
@@ -392,9 +376,29 @@ span {
     }
 }
 
-
 @media (max-width:768px) {
-
+    .logo,
+    h1 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .container {
+        padding: 20px;
+    }
+    .movie img {
+        height: 160px;
+    }
+    .hero-info img {
+        height: 35vh;
+    }
     .navbar select,
     .btn-sign-in {
         max-width: 100%;
@@ -403,27 +407,14 @@ span {
         align-items: center;
         justify-content: center;
     }
-}
-
-@media (max-width:768px) {
-
-    .logo,
-    h1 {
-        font-size: 1.5rem;
+    .hero-sign-up {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media (max-width:768px) {
-    .container {
-        padding: 20px;
-    }
-}
 
-@media (max-width: 768px) {
-    .hero-info img {
-        height: 35vh;
-    }
-}
 
 
 

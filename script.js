@@ -5,24 +5,17 @@ const IMGPATH = "https://image.tmdb.org/t/p/w1280";
 
 const movieGrid = document.getElementById("movie-grid");
 
-
-
 getMovies(APIURL);
 
 async function getMovies(url) {
     const resp = await fetch(url);
     const respData = await resp.json();
-
-    console.log(respData);
-
     showMovies(respData.results.splice(0,6));
 }
 
 function showMovies(movies) {
-   
     movies.forEach((movie) => {
         const { poster_path, title } = movie;
-
         const movieEl = document.createElement("div");
         movieEl.classList.add("movie");
 
@@ -32,7 +25,6 @@ function showMovies(movies) {
                 alt="${title}"
             />
         `;
-
         document.getElementById("movie-grid").appendChild(movieEl);
     });
 }
