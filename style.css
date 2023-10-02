@@ -1,27 +1,23 @@
-
 :root {
-    --bright-blue:#0063e5;
+    --bright-blue: #0063e5;
+    --light-blue: #a4c6f4;
     --dark-blue: #13151c;
     --dark-grey: #32343d;
     --white: #f9f9f9;
     --text-grey: #757575;
-
-    --ff-primary:'Inconsolata', monospace;
-    --ff-sans-serif: 'Titillium Web', sans-serif;
+    --ff-primary: 'Titillium Web', sans-serif;
 }
-
-
 
 * {
     box-sizing: border-box;
     margin: 0;
-    font:inherit;
-  }
+    font: inherit;
+}
 
 html {
     background-color: #040713;
     color: var(--white);
-    font-family: var(--ff-sans-serif);
+    font-family: var(--ff-primary);
 }
 
 li {
@@ -47,7 +43,7 @@ button {
     color: var(--white);
     border: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
 }
 
 h1 {
@@ -55,7 +51,9 @@ h1 {
     font-weight: 900;
 }
 
-p, h2 {
+
+p,
+h2 {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 30px;
@@ -64,14 +62,15 @@ p, h2 {
 h3 {
     font-size: 1.25rem;
     font-weight: 400;
+    color: rgb(210, 199, 199);
 }
 
 /* hero page */
 
 .logo {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 900;
-    color:var(--bright-blue);
+    color: var(--bright-blue);
 }
 
 #language {
@@ -87,10 +86,10 @@ h3 {
 }
 
 .navbar-right {
-    gap:10px;
+    gap: 10px;
     display: flex;
     align-items: center;
-   
+
 }
 
 select {
@@ -98,14 +97,21 @@ select {
     border-radius: 5px;
     display: flex;
     width: 10rem;
-  }
-  .btn-sign-in {
-    border-radius: 5px;
-    display: flex;
-    width: 10rem;
-    justify-content: center;
-  }
+}
 
+.btn-sign-in {
+    border-radius: 5px;
+    border: solid 1px white;
+    background-color: #080b14cd;
+    display: flex;
+    width: 7rem;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
 
 .header-container {
     width: 100%;
@@ -114,15 +120,15 @@ select {
 }
 
 .header-container::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 93vh;
-	z-index: 1;
-	background: rgba(2, 6, 41, 0.6);
-	box-shadow: inset 120px 100px 250px #040713, inset -120px -100px 250px #040713;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 93vh;
+    z-index: 1;
+    background: rgba(2, 6, 41, 0.6);
+    box-shadow: inset 120px 100px 250px #040713, inset -120px -100px 250px #040713;
 }
 
 .hero-container {
@@ -136,11 +142,11 @@ select {
 }
 
 .hero-sign-up {
-    height: 60px;
     width: 100%;
     padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 10px;
 }
 
@@ -148,36 +154,39 @@ select {
     background-color: rgba(0, 0, 0, 0.6);
     border: none;
     width: 40%;
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100%;
 }
 
-::placeholder { 
+::placeholder {
     color: var(--white);
     opacity: 0.7;
     padding-left: 5px;
-    
-  }
+
+}
 
 .sign-up-btn {
     width: 20%;
-    border-top-right-radius:5px;
-    border-bottom-right-radius:5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 @media (max-width:768px) {
-    .input-email, .sign-up-btn { 
+
+    .input-email,
+    .sign-up-btn {
         border-radius: 5px;
         margin-top: 5px;
         width: 100%;
-    } 
     }
+}
 
-    @media (max-width:768px) {
-        .input-email { 
-           padding: 5px;
-        } 
-        }
+@media (max-width:768px) {
+    .input-email {
+        padding: 10px;
+    }
+}
 
 
 
@@ -198,9 +207,8 @@ select {
 }
 
 .hero-info {
-    /* background: url(./images/starwars.png) no-repeat center center/cover; */
     width: 100%;
-    display:flex;
+    display: flex;
 }
 
 .hero-text-left {
@@ -208,7 +216,12 @@ select {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-   
+}
+
+.hero-text {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .movie-container {
@@ -217,14 +230,13 @@ select {
     grid-gap: 5px;
     overflow: hidden;
     justify-content: center;
-   
 }
 
 @media (max-width:768px) {
-.movie-container { 
-    width: 300px;
-    grid-template-columns: repeat(3, 0.6fr);
-} 
+    .movie-container {
+        width: 300px;
+        grid-template-columns: repeat(3, 0.6fr);
+    }
 }
 
 .movie img {
@@ -233,6 +245,7 @@ select {
     height: 200px;
     border-radius: 3px;
 }
+
 
 /* devices section */
 
@@ -245,15 +258,17 @@ select {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 @media (min-width:768px) {
-    .grid-item{ width: 29% }
+    .grid-item {
+        width: 29%
+    }
 }
 
 
-.grid-item > img {
+.grid-item>img {
     max-width: 100%;
     height: auto;
 }
@@ -261,11 +276,11 @@ select {
 .grid-item {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .grid-item h3 {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 
@@ -273,23 +288,25 @@ select {
 .p-grid {
     font-size: 1.0rem;
     flex-wrap: wrap;
-    
+
 }
 
 
-  /* FAQ Section */
+/* FAQ Section */
 
-  .accordion {
+.accordion {
     width: 100%;
     max-width: 1000px;
     margin: 2rem auto;
-  }
-  .accordion-container {
+}
+
+.accordion-container {
     background-color: var(--dark-blue);
     color: var(--white);
     margin: 1rem 0;
-  }
-  .accordion-header {
+}
+
+.accordion-header {
     padding: 0.5rem 3rem 0.5rem 1rem;
     min-height: 3.5rem;
     line-height: 1.25rem;
@@ -298,90 +315,115 @@ select {
     align-items: center;
     position: relative;
     cursor: pointer;
-  }
-  .accordion-header::after {
+}
+
+.accordion-header::after {
     content: "\002B";
     font-size: 2rem;
     position: absolute;
     right: 1rem;
-  }
-  .accordion-header.active::after {
+}
+
+.accordion-header.active::after {
     content: "\2212";
-  }
-  .accordion-content-body {
+}
+
+.accordion-content-body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
-  .accordion-content {
+}
+
+.accordion-content {
     padding: 1rem;
     line-height: 1.5rem;
-  }
+}
 
-  /* Footer */
+/* Footer */
 
-  .footer-container {
+.footer-container {
     background-color: #080b14;
     padding: 20px 150px 0 150px;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-  }
+}
 
-  .footer-grid > ul {
+.footer-grid>ul {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 0.75rem;
     padding-left: 0;
-  }
+}
 
-  .footer-grid > ul:hover {
+.footer-grid>ul:hover {
     color: var(--white);
     cursor: pointer;
-  }
+}
 
-  .footer-container> p {
+.footer-container>p {
     font-size: 0.75rem;
-  }
+}
 
-  span {
+span {
     margin-bottom: 20px;
-  }
+}
 
-  /* Mobile */
+/* Mobile */
 
-  
-  @media (max-width:767px) 
-  { .hero-sign-up 
-    {   width: 100%;
+
+@media (max-width:767px) {
+    .hero-sign-up {
+        width: 100%;
         flex-direction: column;
         align-items: center;
-     } }
+    }
+}
 
-     @media (max-width:1267px) { .devices-image, img{ 
+@media (max-width:1267px) {
+
+    .devices-image,
+    img {
         width: 100%;
-        display: block;} }
+        display: block;
+    }
+}
 
-    
-          @media (max-width:768px) { .navbar select , .btn-sign-in { 
-            max-width: 100%;
-            width: 5rem;
-            margin: auto;
-            align-items: center;
-            justify-content: center;
-            } }
 
-            @media (max-width:768px) { .logo, h1 { 
-               font-size: 1.5rem;
-                } }
+@media (max-width:768px) {
 
-                @media (max-width:768px) { .container { 
-                    padding: 20px;
-                     } }
+    .navbar select,
+    .btn-sign-in {
+        max-width: 100%;
+        width: 5rem;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
+@media (max-width:768px) {
+
+    .logo,
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-info img {
+        height: 35vh;
+    }
+}
 
 
 
